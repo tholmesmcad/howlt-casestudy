@@ -1,0 +1,113 @@
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+html {
+    --font-sans-serif: "martel sans", sans-serif;
+    --font-serif: "domine", serif;
+    --black: black;
+    box-sizing: border-box;
+}
+
+body {
+    padding: 1rem;
+}
+
+/*Typography*/
+p {
+    font-family: var(--font-sans-serif);
+    font-size: 24px;
+    line-height: 2rem;
+}
+
+h2 {
+    font-family: var(--font-serif);
+    font-size: 3.5rem;
+    text-transform: uppercase;
+}
+
+h3 {
+    font-family: var(--font-sans-serif);
+    font-weight: 200;
+    font-size: 1rem;
+    text-transform: uppercase;
+}
+
+h4 {
+    font-family: var(--font-sans-serif);
+    font-weight: 200;
+    font-size: 0.8rem;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+.component img {
+    max-width: initial;
+}
+
+.component__image {
+    border: 1px solid gray;
+}
+
+.component__code {
+    border: 1px solid gray;
+}
+
+/*MAKE IT MATCH STUFF..........................
+a {
+    color: var(--black);
+    text-decoration: none;
+}
+
+i {
+    font-size: 1.2em;
+}
+
+select {
+    border: none;
+    font-size: 0.9rem;
+}
+
+.nav-main {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav-main__heading{
+    display: flex;
+}
+
+.nav-list {
+    list-style: none;
+    display: flex;
+    text-transform: none;
+}
+
+.nav-main__heading {
+    margin: 0 2.5rem;
+}
+
+.nav-list__items li {
+    margin: 1.5rem;
+    padding: 0.5rem;
+}
+
+.nav-list__items--active {
+    border-bottom: 3px solid var(--black);
+}
+
+.nav-list__icons {
+    margin-right: 2.8rem;
+}
+
+.nav-list__icons li {
+    margin: 0 0.3rem;
+    padding: 0.3rem;
+}
+.........................*/
