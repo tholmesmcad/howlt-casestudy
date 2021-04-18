@@ -50,6 +50,21 @@ h3.component__name {
     margin-top: 2rem;
 }
 
+/*Componen image formatting*/
+.component img {
+    max-width: initial;
+}
+
+.component__image {
+    border: 1px solid gray;
+    overflow-x: auto;
+}
+
+.component__code {
+    border: 1px solid gray;
+    padding-left: 0.5rem;
+}
+
 /*Typography*/
 p {
     font-family: var(--font-sans-serif);
@@ -83,18 +98,6 @@ img {
     max-width: 100%;
 }
 
-.component img {
-    max-width: initial;
-}
-
-.component__image {
-    border: 1px solid gray;
-}
-
-.component__code {
-    border: 1px solid gray;
-    padding-left: 0.5rem;
-}
 
 /*MAKE IT MATCH STUFF..........................
 a {
