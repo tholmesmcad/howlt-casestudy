@@ -12,7 +12,42 @@ html {
 }
 
 body {
-    padding: 1rem;
+    padding: 2rem;
+}
+
+/*Compenent name fomatting*/
+.component__name {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-bottom: 1rem;
+}
+
+p.component__name {
+    font-size: 20px;
+}
+
+h1.component__name,
+h2.component__name,
+h3.component__name {
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+h1.component__name {
+    font-size: 4rem;
+    margin-top: 1rem;
+}
+
+h2.component__name {
+    font-size: 2rem;
+    margin-top: 4rem;
+    margin-bottom: 0;
+    border-bottom: 3px solid black;
+}
+
+h3.component__name {
+    font-size: 1.7rem;
+    font-weight: normal;
+    margin-top: 2rem;
 }
 
 /*Typography*/
@@ -24,8 +59,10 @@ p {
 
 h2 {
     font-family: var(--font-serif);
+    font-weight: 100;
     font-size: 3.5rem;
     text-transform: uppercase;
+    margin: 0;
 }
 
 h3 {
@@ -56,6 +93,7 @@ img {
 
 .component__code {
     border: 1px solid gray;
+    padding-left: 0.5rem;
 }
 
 /*MAKE IT MATCH STUFF..........................
