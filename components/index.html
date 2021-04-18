@@ -4,7 +4,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Components | Howlt</title>
-        <link href="https://fonts.googleapis.com/css2?family=Arvo:ital@1&family=Domine&family=Martel+Sans&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@1,300&family=Domine&family=Martel+Sans&display=swap" rel="stylesheet">
         <link href="css/normalize.css" rel="stylesheet" />
         <link href="css/main.css" rel="stylesheet" />
     </head>
@@ -15,8 +15,8 @@
             <h1 class="component__name">Web Components</h1>
             <p class="component__name">Components for the <a href="https://howlt.com/en/">Howlt</a> website.</p>
 
+            <!--Typography-->
             <h2 class="component__name">Typography</h2>
-
             <article class="component">
                 <h3 class="component__name">body</h3>
                 <div class="component__image">
@@ -41,9 +41,58 @@
                     <h3>New Artwork</h3>
                     <h4>Hotdogs Menu of Howlt Coffee</h4>
                 </div>
+            </article>
 
-                <div>
-                    
+            <article class="component">
+                <h3 class="component__name">Italics</h3>
+                <div class="component__image">
+                    <img src="image/type-emphasis.PNG" alt="italics">
+                </div>
+
+                <div class="component__code">
+                    <p><i>Journal</i></p>
+                </div>
+            </article>
+
+            <h2 class="component__name">Navigation</h2>
+            <article class="component">
+                <h3 class="component__name">.nav-main</h3>
+                <div class="component__image">
+                    <img src="image/main-nav.PNG" alt="main navigation">
+                </div>
+
+                <div class="component__code">
+                    <div class="container">     
+                        <div class="nav-main">
+                            <div class="nav-main__heading">
+                                <h1 class="nav-heading"><a href="index.html"><img src="image/logo.PNG" alt="Howlt"></a></h1>
+                            </div>
+        
+                            <nav>
+                                <ul class="nav-list nav-list__items">
+                                    <li class="nav-list__items--active"><a href="#!">Works</a></li>
+                                    <li><a href="#!">Journal</a></li>
+                                    <li><a href="#!">Shop</a></li>
+                                    <li><a href="#!">Cafe</a></li>
+                                    <li><a href="#!">About</a></li>
+                                    <li><a href="#!">Contact</a></li>
+                                </ul>
+                            </nav>
+                                
+                            <div>
+                                <ul class="nav-list nav-list__icons">
+                                    <li><a href="#!"><i class="fab fa-instagram"></i></a></li>
+                                    <li><a href="#!"><i class="fab fa-facebook-f"></i></a></li>
+                                    <li><a href="#!"><i class="fab fa-twitter"></i></a></li>
+                                    <select name="lang" id="lang-select"><li><a href="#!">EN</a></li>
+                                        <option value="english">EN</option>
+                                        <option value="japanese">JA</option>
+                                    </select>
+                                    <li><a href="#!"><i class="fas fa-shopping-bag"></i></a></li>
+                                </ul>
+                            </div>
+                        </div> <!--nav div-->
+                    </div> <!--containter div-->
                 </div>
             </article>
         </main>

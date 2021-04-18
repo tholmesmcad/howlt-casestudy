@@ -7,6 +7,7 @@
 html {
     --font-sans-serif: "martel sans", sans-serif;
     --font-serif: "domine", serif;
+    --font-italics: "Merriweather";
     --black: black;
     box-sizing: border-box;
 }
@@ -51,6 +52,10 @@ h3.component__name {
 }
 
 /*Componen image formatting*/
+img {
+    display: block;
+    max-width: 100%;
+}
 .component img {
     max-width: initial;
 }
@@ -70,6 +75,7 @@ p {
     font-family: var(--font-sans-serif);
     font-size: 24px;
     line-height: 2rem;
+    margin: 0;
 }
 
 h2 {
@@ -93,20 +99,16 @@ h4 {
     font-size: 0.8rem;
 }
 
-img {
-    display: block;
-    max-width: 100%;
+i {
+    font-family: var(--font-italics);
+    font-size: 0.7rem;
 }
 
 
-/*MAKE IT MATCH STUFF..........................
+/*Naviation*/
 a {
     color: var(--black);
     text-decoration: none;
-}
-
-i {
-    font-size: 1.2em;
 }
 
 select {
@@ -128,6 +130,7 @@ select {
     list-style: none;
     display: flex;
     text-transform: none;
+    font-family: var(--font-sans-serif);
 }
 
 .nav-main__heading {
@@ -136,11 +139,12 @@ select {
 
 .nav-list__items li {
     margin: 1.5rem;
-    padding: 0.5rem;
+    padding: 0;
+    padding-bottom: 0.4em;
 }
 
 .nav-list__items--active {
-    border-bottom: 3px solid var(--black);
+    border-bottom: 3.5px solid var(--black);
 }
 
 .nav-list__icons {
@@ -151,4 +155,3 @@ select {
     margin: 0 0.3rem;
     padding: 0.3rem;
 }
-.........................*/
