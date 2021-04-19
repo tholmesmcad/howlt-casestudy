@@ -51,7 +51,11 @@ h3.component__name {
     margin-top: 2rem;
 }
 
-/*Componen image formatting*/
+.component__name a {
+    text-decoration: underline;
+}
+
+/*Component image formatting*/
 img {
     display: block;
     max-width: 100%;
@@ -80,8 +84,8 @@ p {
 
 h2 {
     font-family: var(--font-serif);
-    font-weight: 100;
-    font-size: 3.5rem;
+    font-weight: 400;
+    font-size: 3rem;
     text-transform: uppercase;
     margin: 0;
 }
@@ -89,8 +93,12 @@ h2 {
 h3 {
     font-family: var(--font-sans-serif);
     font-weight: 200;
-    font-size: 1rem;
+    font-size: 0.9rem;
     text-transform: uppercase;
+}
+
+h3.small {
+    font-size: 0.7rem;
 }
 
 h4 {
@@ -99,13 +107,13 @@ h4 {
     font-size: 0.8rem;
 }
 
-i {
+em {
     font-family: var(--font-italics);
     font-size: 0.7rem;
 }
 
 
-/*Naviation*/
+/*Navigation*/
 a {
     color: var(--black);
     text-decoration: none;
@@ -148,10 +156,44 @@ select {
 }
 
 .nav-list__icons {
-    margin-right: 2.8rem;
+    font-size: 22px;
 }
 
 .nav-list__icons li {
     margin: 0 0.3rem;
     padding: 0.3rem;
+}
+
+/*failed dropdown arrow formatting
+select {
+    appearance: none;
+}
+
+.nav-list__select {
+    border: 1px solid red;
+    width: 100%;
+}
+
+.nav-list__select::after {
+    position: relative;
+    left: -8px;
+    content: "v";
+    transform: scale(10px,0);
+    font-size: 14px;
+    font-weight: bolder;
+    z-index: -1;
+}
+*/
+
+/*Cover section*/
+.cover-section {
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-columns: minmax(auto, 950px);
+    text-align: center;
+}
+
+.cover-section__cell img {
+    max-width: 100%;
 }
