@@ -217,26 +217,53 @@ select {
 }
 
 /*Recent Posts*/
-.posts h2{
+.gallery h2{
     text-align: center;
     margin: 1rem;
 }
 
-.posts {
+.gallery {
     padding: 2.6rem;
 }
 
-.posts__item img {
+.gallery__item img {
     max-width: 340px;
     height: 450px;
 }
   
-.posts .container {
+.gallery .container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
 	grid-template-rows: repeat(auto-fit, minmax(340px, 1fr));
 }
 
-.posts__item {
+.gallery__item {
     padding-bottom: 2rem;
 }
+
+/*Howlt Coffee*/
+.post .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+
+.post__item {
+    padding: 0 8rem 0 4rem;
+
+}
+
+.post__image {
+    padding: 0;
+    width: 100%;
+    object-fit: cover;
+}
+
+.post h2 {
+    margin: 6rem 0 16rem;
+}
+
+.post em{
+    font-size: 1rem;
+}
+
