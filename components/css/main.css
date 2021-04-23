@@ -16,6 +16,12 @@ body {
     padding: 2rem;
 }
 
+img {
+    display: block;
+    max-width: 100%;
+    object-fit: cover;
+}
+
 /*Compenent name fomatting*/
 .component__name {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
@@ -90,6 +96,13 @@ h2 {
     margin: 0;
 }
 
+h2.small {
+    font-size: 1.3rem;
+    text-transform: none; 
+    text-align: center;
+    margin: 0 0 1rem;
+}
+
 h3 {
     font-family: var(--font-sans-serif);
     font-weight: 200;
@@ -105,6 +118,11 @@ h4 {
     font-family: var(--font-sans-serif);
     font-weight: 200;
     font-size: 0.8rem;
+}
+
+h4.large {
+    font-size: 1rem;
+    margin: 1rem 0 0.2rem;
 }
 
 em {
@@ -196,4 +214,29 @@ select {
 
 .cover-section__cell img {
     max-width: 100%;
+}
+
+/*Recent Posts*/
+.posts h2{
+    text-align: center;
+    margin: 1rem;
+}
+
+.posts {
+    padding: 2.6rem;
+}
+
+.posts__item img {
+    max-width: 340px;
+    height: 450px;
+}
+  
+.posts .container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+	grid-template-rows: repeat(auto-fit, minmax(340px, 1fr));
+}
+
+.posts__item {
+    padding-bottom: 2rem;
 }
