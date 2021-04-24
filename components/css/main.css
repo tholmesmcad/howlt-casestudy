@@ -81,11 +81,13 @@ img {
 }
 
 /*Typography*/
-p {
+p, 
+li {
     font-family: var(--font-sans-serif);
     font-size: 24px;
     line-height: 2rem;
-    margin: 0;
+    list-style: none;
+
 }
 
 h2 {
@@ -96,7 +98,7 @@ h2 {
     margin: 0;
 }
 
-/*There's a lot of inconsistencies in font sizes and transoformations and struggled with how to handle them. This h2.smal and h3.small were two of my work arounds*/
+/*There's a lot of inconsistencies in font sizes and transoformations and struggled with how to handle them. This h2.small and h3.small were two of my work arounds*/
 h2.small {
     font-size: 1.3rem;
     text-transform: none; 
@@ -294,6 +296,75 @@ input[type=submit] {
     bottom: 10.5px;
 }
 
+/*Contact*/
+.contact {
+    margin: 1rem 5rem;
+    padding: 1rem 0;
+    border-top: 1px solid #ccc;
+}
+
+.contact img {
+    padding-top: 4rem;
+}
+
+.contact .container {
+    display: flex;
+    justify-content: space-between;
+    padding-right: 15rem;
+    flex-wrap: wrap;
+}
+
+.itm1 {
+    flex-basis: 20rem;
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+}
+.small li {
+    font-size: 1.1rem;
+}
+
+h2.extrasmall {
+    font-weight: 100;
+    font-size: 0.8rem;
+    text-transform: none;
+    margin: 2rem 0 .2rem;
+}
+
+.contact p{
+    margin: 0;
+    padding: 0;
+}
+
+p.map {
+    text-decoration: underline;
+    font-size: 0.8rem;
+}
+
+.contact i {
+    margin: 0 0.8rem;
+}
+
+/*Footer*/
+footer {
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: ;
+}
+
+footer p {
+    font-size: 0.9rem;
+    font-weight: 100;
+    padding: 0 1rem;
+}
+
+footer .itm1 {
+    padding-left: 5rem;
+}
 
 
 
