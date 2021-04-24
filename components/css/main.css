@@ -244,23 +244,26 @@ select {
 /*Howlt Coffee*/
 .post .container {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
+    grid-template-columns: repeat(auto-fit, minmax(700px, 1fr));
+	grid-template-rows: repeat(auto-fit, minmax(700px, 1fr));
 }
 
 .post__item {
     padding: 0 8rem 0 4rem;
-
 }
 
-.post__image {
+.post__image img {
     padding: 0;
     width: 100%;
     object-fit: cover;
 }
 
 .post h2 {
-    margin: 6rem 0 16rem;
+    margin: 5rem 0 10rem;
+}
+
+.post__item--paragraph {
+    padding: 1.5rem 0 2rem;
 }
 
 .post em{
