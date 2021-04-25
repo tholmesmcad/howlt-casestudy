@@ -11,15 +11,40 @@
     </head>
 
     <body>
+        <header>
+            <div class="container">
+                
+                <nav class="sidebar component__name">
+                    <h2><a href="#atoms">Atoms</a></h2>
+                    <ul>
+                        <li><a href="#body">body</a></li>
+                        <li><a href="#headings">headings (h2, h3, h4)</a></li>
+                        <li><a href="#emphasis">emphasis</a></li>
+                        <li><a href="#iconssection">Icons</a></li>
+                    </ul>
+
+                    <h2><a href="#organisms">Organisms</a></h2>
+                    <ul>
+                        <li><a href="#mainnavigation">.nav-main</a></li>
+                        <li><a href="#coversection">.cover</a></li>
+                        <li><a href="#gallerysection">.gallery</a></li>
+                        <li><a href="#postsection">.post</a></li>
+                        <li><a href="#newslettersection">.newsletter</a></li>
+                        <li><a href="#contactsection">.contact</a></li>
+                        <li><a href="#footersection">footer</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
 
         <main>
             <h1 class="component__name">Web Components</h1>
             <p class="component__name">Components for the <a href="https://howlt.com/en/">Howlt</a> website.</p>
 
-            <!--Typography-->
-            <h2 class="component__name">Typography</h2>
+            <!--Atoms-->
+            <h2 class="component__name" id="atoms">Atoms</h2>
             <article class="component">
-                <h3 class="component__name">body</h3>
+                <h3 class="component__name" id="body">body</h3>
                 <div class="component__image">
                     <img src="image/type-body.PNG" alt="body copy">
                 </div>
@@ -30,7 +55,7 @@
             </article>
 
             <article class="component">
-                <h3 class="component__name">headings (h2, h3, h4)</h3>
+                <h3 class="component__name" id="headings">headings (h2, h3, h4)</h3>
                 <div class="component__image">
                     <img src="image/type-h2.PNG" alt="h2">
                     <img src="image/type-h3.PNG" alt="h3">
@@ -45,7 +70,7 @@
             </article>
 
             <article class="component">
-                <h3 class="component__name">Emphasis</h3>
+                <h3 class="component__name" id="emphasis">Emphasis</h3>
                 <div class="component__image">
                     <img src="image/type-emphasis.PNG" alt="emphasis">
                 </div>
@@ -55,10 +80,8 @@
                 </div>
             </article>
 
-            <!--Atoms-->
-            <h2 class="component__name">Atoms</h2>
             <article class="component">
-                <h3 class="component__name">icons</h3>
+                <h3 class="component__name" id="iconssection">icons</h3>
                 <div class="component__image">
                     <img src="image/icon-instagram.PNG" alt="instagram">
                     <img src="image/icon-facebook.PNG" alt="facebook">
@@ -74,10 +97,11 @@
                 </div>
             </article>
 
-            <h2 class="component__name">Organisms</h2>
+            <h2 class="component__name" id="organisms">Organisms</h2>
+
             <!--Navigation-->
             <article class="component">
-                <h3 class="component__name">.nav-main</h3>
+                <h3 class="component__name" id="mainnavigation">.nav-main</h3>
                 <div class="component__image">
                     <img src="image/main-nav.PNG" alt="main navigation">
                 </div>
@@ -105,12 +129,11 @@
                                     <li><a href="#!"><i class="fab fa-instagram"></i></a></li>
                                     <li><a href="#!"><i class="fab fa-facebook-f"></i></a></li>
                                     <li><a href="#!"><i class="fab fa-twitter"></i></a></li>
-                                    <div class="nav-list__select">
-                                        <select name="lang" id="lang-select"><li><a href="#!">EN <div class="dropdown">v</div></a></li>
-                                            <option value="english">EN</option>
-                                            <option value="japanese">JA</option>
+                                    <li><select name="lang" id="lang-select">
+                                        <option value="english">EN</option>
+                                        <option value="japanese">JA</option>
                                         </select>
-                                    </div>
+                                    </li>
                                     <li><a href="#!"><i class="fas fa-shopping-bag"></i></a></li>
                                 </ul>
                             </div>
@@ -121,7 +144,7 @@
 
              <!--Cover-->
              <article class="component">
-                 <h3 class="component__name">.cover</h3>
+                 <h3 class="component__name" id="coversection">.cover</h3>
                  <div class="component__image">
                      <img src="image/cover-section.PNG" alt="cover section">
                  </div>
@@ -140,7 +163,7 @@
 
             <!--Recent Posts-->
               <article class="component">
-                  <h3 class="component__name">.gallery</h3>
+                  <h3 class="component__name" id="gallerysection">.gallery</h3>
                   <div class="component__image">
                       <img src="image/recent-posts.PNG" alt="recent posts">
                   </div>
@@ -192,7 +215,7 @@
 
         <!--Howlt Coffee-->
              <article class="component">
-                 <h3 class="component__name">.post</h3>
+                 <h3 class="component__name" id="postsection">.post</h3>
                  <div class="component__image">
                      <img src="image/section.PNG" alt="section">
                  </div>
@@ -217,7 +240,7 @@
         
         <!--Newsletter-->
              <article class="component">
-                 <h3 class="component__name">.newsletter</h3>
+                 <h3 class="component__name" id="newslettersection">.newsletter</h3>
                  <div class="component__image">
                      <img src="image/newsletter.PNG" alt="newsletter sign-up">
                  </div>
@@ -234,7 +257,7 @@
 
         <!--Contact-->
              <article class="component">
-                 <h3 class="component__name">.contact</h3>
+                 <h3 class="component__name" id="contactsection">.contact</h3>
                  <div class="component__image">
                      <img src="image/contact1.PNG" alt="Howlt contact information">
                  </div>
@@ -290,7 +313,7 @@
 
               <!--Footer-->
               <article class="component">
-                <h3 class="component__name">footer</h3>
+                <h3 class="component__name" id="footersection">footer</h3>
                 <div class="component__image">
                     <img src="image/footer.PNG" alt="Footer">
                 </div>

@@ -12,8 +12,10 @@ html {
     box-sizing: border-box;
 }
 
-body {
+main {
     padding: 2rem;
+    width: 100%;
+    padding-left: 300px;
 }
 
 img {
@@ -59,6 +61,40 @@ h3.component__name {
 
 .component__name a {
     text-decoration: underline;
+}
+
+/*Component header formatting*/
+body {
+    display: flex;
+}
+
+header {
+    margin: 0;
+    padding: 2rem;
+    position: fixed;
+    width: 250px;
+    height: 100%;
+    background-color:rgb(22, 89, 190);
+}
+
+.sidebar a {
+    text-decoration: none;
+    font-family: var(--font-sans-serif);
+    color: white;
+}
+
+.sidebar a:hover {
+    font-weight: bolder;
+}
+
+.sidebar h2 {
+    font-size: 2rem;
+    margin-top: 2rem;
+    color: white;
+}
+
+.sidebar li {
+    font-size: 1rem;
 }
 
 /*Component image formatting*/
@@ -184,27 +220,6 @@ select {
     margin: 0 0.3rem;
     padding: 0.3rem;
 }
-
-/*failed dropdown arrow formatting
-select {
-    appearance: none;
-}
-
-.nav-list__select {
-    border: 1px solid red;
-    width: 100%;
-}
-
-.nav-list__select::after {
-    position: relative;
-    left: -8px;
-    content: "v";
-    transform: scale(10px,0);
-    font-size: 14px;
-    font-weight: bolder;
-    z-index: -1;
-}
-*/
 
 /*Cover section*/
 .cover-section {
@@ -353,7 +368,6 @@ footer {
     color: white;
     display: flex;
     justify-content: space-between;
-    flex-wrap: ;
 }
 
 footer p {
