@@ -1,12 +1,181 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Home | Howlt</title>
-    </head>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Components | Howlt</title>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@1,300&family=Domine&family=Martel+Sans&display=swap" rel="stylesheet">
+    <link href="fonts/fontawesome/css/all.css" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet" />
+    <link href="css/main.css" rel="stylesheet" />
+</head>
 
-    <body>
-        <h1>Home Page</h1>
-    </body>
+<body>
+    <!--Navigation-->
+    <header>
+        <div class="container">     
+            <div class="nav-main">
+                <div class="nav-main__heading">
+                    <h1 class="nav-heading"><a href="index.html"><img src="image/logo.PNG" alt="Howlt"></a></h1>
+                </div>
+
+                <nav>
+                    <ul class="nav-list nav-list__items">
+                        <li class="nav-list__items--active"><a href="#!">Works</a></li>
+                        <li><a href="#!">Journal</a></li>
+                        <li><a href="#!">Shop</a></li>
+                        <li><a href="#!">Cafe</a></li>
+                        <li><a href="#!">About</a></li>
+                        <li><a href="#!">Contact</a></li>
+                    </ul>
+                </nav>
+                    
+                <div>
+                    <ul class="nav-list nav-list__icons">
+                        <li><a href="#!"><i class="fab fa-instagram"></i></a></li>
+                        <li><a href="#!"><i class="fab fa-facebook-f"></i></a></li>
+                        <li><a href="#!"><i class="fab fa-twitter"></i></a></li>
+                        <li><select name="lang" id="lang-select">
+                            <option value="english">EN</option>
+                            <option value="japanese">JA</option>
+                            </select>
+                        </li>
+                        <li><a href="#!"><i class="fas fa-shopping-bag"></i></a></li>
+                    </ul>
+                </div>
+            </div> <!--nav div-->
+        </div> <!--containter div-->
+    </header>
+
+    <main>
+        <!--Hero-->
+        <div class="cover-section">
+            <div class="cover-section__cell">
+                <img src="https://images.ctfassets.net/j183l2yzdbu4/7z3Zl4WAkqSFU4VF8BVRot/bde64a9e2f091992c7ac2f1eb3518be5/DSC_1272.jpg?w=1600&h=1068&q=75&fm=webp" alt="Cover in Pink">
+                <h3 class="small"><a href="#!">View more products</a></h3>
+                <h2>Stuck in Pink</h2>
+                <h3>New Long Sleeve Tee</h3>
+            </div>
+        </div>
+
+        <!--Recent Posts-->
+        <section class="gallery">
+            <div class="container">
+                <article class="gallery__item">
+                    <a href="#!"><img src="https://images.ctfassets.net/j183l2yzdbu4/7z3Zl4WAkqSFU4VF8BVRot/bde64a9e2f091992c7ac2f1eb3518be5/DSC_1272.jpg?w=400&h=267&q=70&fm=webp" alt="New Long Tee Stuck in Pink"></a>
+                    <p><em><a href="#!">Journal</a></em></p>
+                    <h4 class="large">New Long Tee Stuck in Pink</h4>
+                    <p><em><a href="#!">News</a></em></p>
+                </article>
+
+                <article class="gallery__item">
+                    <a href="#!"><img src="https://images.ctfassets.net/j183l2yzdbu4/7tStfbpsvmTobw8oUp85id/f847d1b5d40adc24312c96d218c8b20f/DSCF1428-Edit.jpg?w=400&h=300&q=70&fm=webp" alt="Howlt coffee"></a>
+                    <p><em><a href="#!">Journal</a></em></p>
+                    <h4 class="large">Howlt Coffee</h4>
+                    <p><em><a href="#!">Howlt Coffee</a></em></p>
+                </article>
+
+                <article class="gallery__item">
+                    <a href="#!"><img src="https://images.ctfassets.net/j183l2yzdbu4/54Xhj0xnvTUSNQKnL0owzz/0dc4baba9aa9bf22d09050a48ebe4625/akuy-fit.jpg?w=400&h=282&q=70&fm=webp" alt="AKUY"></a>
+                    <p><em><a href="#!">Works</a></em></p>
+                    <h4 class="large">AKUY</h4>
+                    <p><em><a href="#!">Contemporary</a></em></p>
+                </article>
+
+                <article class="gallery__item">
+                    <a href="#!"><img src="https://images.ctfassets.net/j183l2yzdbu4/3h5wCKXRMvzixwqQEw1Yvu/2884878a529637171cfa8ecfdd0807bf/stuck-in-pink-tee-wide.jpg?w=400&h=294&q=70&fm=webp" alt="Stuck in pink"></a>
+                    <p><em><a href="#!">Shop</a></em></p>
+                    <h4 class="large">Stuck in Pink</h4>
+                    <p><em><a href="#!">Tees</a></em></p>
+                </article>
+
+                <article class="gallery__item">
+                    <a href="#!"><img src="https://images.ctfassets.net/j183l2yzdbu4/75xQKKfJscpaUjLRrHkJOZ/6cb44f883576fe058c207f6ba07fbb4d/smile-wide.jpg?w=400&h=294&q=70&fm=webp" alt="Have a smile tee"></a>
+                    <p><em><a href="#!">Shop</a></em></p>
+                    <h4 class="large">Have a Smile&#174; Tee</h4>
+                    <p><em><a href="#!">Tees</a></em></p>
+                </article>
+            </div>
+        </section>
+
+        <!--Howlt Coffee-->
+        <section class="post">
+            <div class="container">
+                <article class="post__item">
+                    <h2><img src="image/logo-coffee.PNG" alt="Howlt coffee"></h2>
+                    <p><em><a href="#!">&#62; About Howlt Coffee</a></em></p>
+                    <p><em><i class="fas fa-external-link-alt"></i>Go To Website</em></p>
+                    <p class="post__item--paragraph">In May 2019, we opened Howlt Coffee, a coffee shop based on the concept of art and design, on the first floor of the former Daimyo Elementary School, located in Tenjin, the center of Fukuoka. In addition to delicious coffee made from carefully selected beans and seasonal drinks, we offer a wide variety of original Howlt products and goods by contemporary artists selected from around the world.</p>
+                </article>
+
+                <article class="post__image">
+                    <img src="https://images.ctfassets.net/j183l2yzdbu4/39pnENVbm5m9f4YREIhErg/9bb4c1f5616cfc92515f5ce143b17cba/He-graphic.jpg?w=1600&h=1789&q=75&fm=webp" alt="Howlt Coffee">
+                </article>
+            </div>
+        </section>
+    
+        <!--Newsletter-->  
+        <div class="newsletter">
+            <h3>Sign up to the Howlt newsletter</h3>
+            <form action="my-form.php" method="POST">
+                <input type="email" name="email"><input type="submit" value="submit">
+            </form>
+        </div>
+                
+
+        <!--Contact-->
+        <section class="contact">
+            <img src="image/logo.PNG" alt="Howlt contact information" width="100">
+            <div class="container">
+                <div class="itm1">
+                    <h2 class="extrasmall">Site Map</h2>
+                    <ul>
+                        <li><a href="#!">Works</a></li>
+                        <li><a href="#!">Journal</a></li>
+                        <li><a href="#!">Shop</a></li>
+                        <li><a href="#!">Cafe</a></li>
+                        <li><a href="#!">About</a></li>
+                        <li><a href="#!">Contact</a></li>
+                    </ul> 
+                    
+                    <ul class="small">
+                        <li><a href="#!">Shopping Info</a></li>
+                        <li><a href="#!">Privacy Policy</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h2 class="extrasmall">Address</h2>
+
+                    <ul>
+                        <li>535 Carlton Ave</li>
+                        <li>Brooklyn New York</li>
+                    </ul>
+
+                    <p class="map"><a href="#!">Google Map</a></p>
+                </div>
+                
+
+                <div>
+                    <h2 class="extrasmall">Connect with Us</h2>
+
+                    <p><a href="#!">info@howlt.com</a></p>
+
+                    <p>
+                        <a href="#!"><i class="fab fa-instagram"></i></a>
+                        <a href="#!"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#!"><i class="fab fa-twitter"></i></a>
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!--Footer-->
+        <footer>
+            <p class="itm1">Site by LOWORKS Inc.</p>
+            <p class="itm2">&#169;2021 Howlt . BK . NY</p>
+        </footer>  
+
+    </main>
+</body>
 </html>

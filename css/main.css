@@ -1,0 +1,291 @@
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+html {
+    --font-sans-serif: "martel sans", sans-serif;
+    --font-serif: "domine", serif;
+    --font-italics: "Merriweather";
+    --black: black;
+    box-sizing: border-box;
+}
+
+main {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    object-fit: cover;
+}
+
+/*Typography*/
+p, 
+li {
+    font-family: var(--font-sans-serif);
+    font-size: 24px;
+    line-height: 2rem;
+    list-style: none;
+}
+
+h2 {
+    font-family: var(--font-serif);
+    font-weight: 400;
+    font-size: 3rem;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+/*There's a lot of inconsistencies in font sizes and transoformations and struggled with how to handle them. This h2.small and h3.small were two of my work arounds*/
+h2.small {
+    font-size: 1.3rem;
+    text-transform: none; 
+    text-align: center;
+    margin: 0 0 1rem;
+}
+
+h3 {
+    font-family: var(--font-sans-serif);
+    font-weight: 200;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+}
+
+h3.small {
+    font-size: 0.7rem;
+}
+
+h4 {
+    font-family: var(--font-sans-serif);
+    font-weight: 200;
+    font-size: 0.8rem;
+}
+
+h4.large {
+    font-size: 1rem;
+    margin: 1rem 0 0;
+}
+
+em {
+    font-family: var(--font-italics);
+    font-size: 0.8rem;
+}
+
+
+/*Navigation*/
+a {
+    color: var(--black);
+    text-decoration: none;
+}
+
+select {
+    border: none;
+    font-size: 0.9rem;
+}
+
+.nav-main {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav-main__heading{
+    display: flex;
+}
+
+.nav-list {
+    list-style: none;
+    display: flex;
+    text-transform: none;
+    font-family: var(--font-sans-serif);
+}
+
+.nav-main__heading {
+    margin: 0 2.5rem;
+}
+
+.nav-list__items li {
+    margin: 1.5rem;
+    padding: 0;
+    padding-bottom: 0.4em;
+}
+
+.nav-list__items--active {
+    border-bottom: 3.5px solid var(--black);
+}
+
+.nav-list__icons {
+    font-size: 22px;
+}
+
+.nav-list__icons li {
+    margin: 0 0.3rem;
+    padding: 0.3rem;
+}
+
+/*Cover section*/
+.cover-section {
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-columns: minmax(auto, 950px);
+    text-align: center;
+}
+
+.cover-section__cell img {
+    max-width: 100%;
+}
+
+/*Recent Posts*/
+.gallery h2{
+    text-align: center;
+    margin: 1rem;
+}
+
+.gallery {
+    padding: 2.6rem;
+}
+
+.gallery__item img {
+    max-width: 340px;
+    height: 450px;
+}
+  
+.gallery .container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+	grid-template-rows: repeat(auto-fit, minmax(340px, 1fr));
+}
+
+.gallery__item {
+    padding-bottom: 2rem;
+}
+
+/*Howlt Coffee*/
+.post .container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(700px, 1fr));
+	grid-template-rows: repeat(auto-fit, minmax(700px, 1fr));
+}
+
+.post__item {
+    padding: 0 8rem 0 4rem;
+}
+
+.post__image img {
+    padding: 0;
+    width: 100%;
+    object-fit: cover;
+}
+
+.post h2 {
+    margin: 5rem 0 10rem;
+}
+
+.post__item--paragraph {
+    padding: 1.5rem 0 2rem;
+}
+
+.post em{
+    font-size: 1rem;
+}
+
+/*Newsletter*/
+.newsletter {
+    text-align: center;
+}
+
+input[type=email] {
+    width: 40%;
+    border: none;
+    border-bottom: 2px solid black;
+}
+
+input[type=submit] {
+    background-color: black;
+    font-family: var(--font-sans-serif);
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    color: white;
+    border: none;
+    padding: 0.8rem 3rem;
+    position: relative;
+    bottom: 10.5px;
+}
+
+/*Contact*/
+.contact {
+    margin: 1rem 5rem;
+    padding: 1rem 0;
+    border-top: 1px solid #ccc;
+}
+
+.contact img {
+    padding-top: 4rem;
+}
+
+.contact .container {
+    display: flex;
+    justify-content: space-between;
+    padding-right: 15rem;
+    flex-wrap: wrap;
+}
+
+.itm1 {
+    flex-basis: 20rem;
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+}
+.small li {
+    font-size: 1.1rem;
+}
+
+h2.extrasmall {
+    font-weight: 100;
+    font-size: 0.8rem;
+    text-transform: none;
+    margin: 2rem 0 .2rem;
+}
+
+.contact p{
+    margin: 0;
+    padding: 0;
+}
+
+p.map {
+    text-decoration: underline;
+    font-size: 0.8rem;
+}
+
+.contact i {
+    margin: 0 0.8rem;
+}
+
+/*Footer*/
+footer {
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+}
+
+footer p {
+    font-size: 0.9rem;
+    font-weight: 100;
+    padding: 0 1rem;
+}
+
+footer .itm1 {
+    padding-left: 5rem;
+}
+
+
+
