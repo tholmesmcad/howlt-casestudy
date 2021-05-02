@@ -190,7 +190,6 @@ select {
 .cover-section__cell img {
     max-height: 50rem;
     width: 100%;
-    display: cover;
     margin-bottom: 3.5rem;
 }
 
