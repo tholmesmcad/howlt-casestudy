@@ -24,12 +24,75 @@ img {
     object-fit: cover;
 }
 
-/*Typography*/
-p, 
+/*TYPOGRAPHY*/
+/*Typography - desktop*/
+@media screen and (min-width: 601px) {
+p {
+    font-size: 24px;
+}
+
+h2 {
+    font-size: 4em;
+}
+
+h2.small {
+    font-size: 1.3em;
+}
+
+h2.extrasmall {
+    font-size: 0.8em;
+}
+
+h3 {
+    font-size: 1.1em;
+}
+
+h3.small {
+    font-size: 0.8em;
+}
+
+h4 {
+    font-size: 0.8em;
+}
+
+h4.large {
+    font-size: 1em;
+}
+
+em {
+    font-size: 0.6em;
+}
+
+select {
+    font-size: 0.9em;
+}
+
+.small li {
+    font-size: 1.1rem;
+}
+
+.contact li {
+    font-size: 1.5rem;
+}
+
+.contact .small li {
+    font-size: 0.9rem;
+}
+}
+
+/*Typography - mobile*/
+@media screen and (max-width: 600px) {
+p {
+    font-size: 16px;
+}
+}
+
+/*Typography - all*/
+p,
+h1,
 li {
     font-family: var(--font-sans-serif);
-    font-size: 24px;
-    line-height: 2rem;
+    line-height: 1.5em;
     list-style: none;
     margin: 0;
     padding: 0;
@@ -38,47 +101,48 @@ li {
 h2 {
     font-family: var(--font-serif);
     font-weight: 400;
-    font-size: 3rem;
     text-transform: uppercase;
     margin: 0;
 }
 
-/*There's a lot of inconsistencies in font sizes and transoformations and struggled with how to handle them. This h2.small and h3.small were two of my work arounds*/
 h2.small {
-    font-size: 1.3rem;
     text-transform: none; 
     text-align: center;
-    margin: 0 0 1rem;
+    margin: 0 0 1em;
 }
 
 h3 {
     font-family: var(--font-sans-serif);
     font-weight: 200;
-    font-size: 0.9rem;
     text-transform: uppercase;
-}
-
-h3.small {
-    font-size: 0.7rem;
 }
 
 h4 {
     font-family: var(--font-sans-serif);
     font-weight: 200;
-    font-size: 0.8rem;
 }
 
 h4.large {
-    font-size: 1rem;
-    margin: 1rem 0 0;
+    margin: 1em 0 0;
 }
 
 em {
     font-family: var(--font-italics);
-    font-size: 0.8rem;
 }
 
-/*Navigation*/
+/*nav*/
+.nav-main {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    margin: auto;
+    padding: 2rem 0 0.5rem;
+    background: white;
+}
+
 a {
     color: var(--black);
     text-decoration: none;
@@ -86,50 +150,48 @@ a {
 
 select {
     border: none;
-    font-size: 0.9rem;
-}
-
-.nav-main {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin-bottom: 8rem;
-    
-}
-
-.nav-main__heading{
-    display: flex;
 }
 
 .nav-list {
     list-style: none;
-    display: flex;
     text-transform: none;
     font-family: var(--font-sans-serif);
 }
 
-.nav-main__heading {
-    margin: 0 2.5rem;
+/*Nav - Logo*/
+.nav-heading {
+    position: relative;
+    left: 3rem;
 }
 
-.nav-list__items li {
-    margin: 1.5rem;
-    padding: 0;
-    padding-bottom: 0.4em;
+/*Nav - Pages*/
+.nav-page .nav-list {
+    display: grid;
+    align-items: center;
+    grid-template-columns: repeat(6, minmax(auto, 75px));
+    grid-gap: 1rem;
+    padding: 0 2rem 0 2rem;
+}
+
+.nav-page .nav-list li { 
     font-size: 1rem;
+    text-align: right;
 }
 
-.nav-list__items--active {
-    border-bottom: 3.5px solid var(--black);
+/*Nav - Icons*/
+.nav-icon {
+    position: relative;
+    right: 0.5rem;
 }
 
-.nav-list__icons {
-    font-size: 22px;
+.nav-icon .nav-list {
+    display: flex;
 }
 
-.nav-list__icons li {
+.nav-icon .nav-list li {
     margin: 0 0.3rem;
     padding: 0.3rem;
+    font-size: 1.3rem;
 }
 
 /*Cover section*/
@@ -145,12 +207,18 @@ select {
     max-height: 50rem;
     width: 100%;
     display: cover;
+    margin-bottom: 3.5rem;
+}
+
+.cover-section:first-child {
+    margin-top: 10rem;
 }
 
 /*Recent Posts*/
 .gallery h2{
     text-align: center;
     margin: 1rem;
+    margin-bottom: 3.5rem;
 }
 
 .gallery {
@@ -176,12 +244,15 @@ select {
 /*Howlt Coffee*/
 .post .container {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(700px, 1fr));
-	grid-template-rows: repeat(auto-fit, minmax(700px, 1fr));
+    grid-template-columns: repeat(2, minmax(auto, 50%));
 }
 
 .post__item {
     padding: 0 8rem 0 4rem;
+}
+
+.post__item img {
+    max-width: 400px;
 }
 
 .post__image img {
@@ -241,7 +312,7 @@ input[type=submit] {
 
 /*Contact*/
 .contact {
-    margin: 4rem 12rem;
+    margin: 4rem 5rem;
     padding: 1rem 0;
     border-top: 1px solid #ccc;
 }
@@ -265,13 +336,9 @@ ul {
     padding: 0;
     margin: 0;
 }
-.small li {
-    font-size: 1.1rem;
-}
 
 h2.extrasmall {
     font-weight: 100;
-    font-size: 0.8rem;
     text-transform: none;
     margin: 2rem 0 .2rem;
 }
@@ -283,7 +350,7 @@ h2.extrasmall {
 
 p.map {
     text-decoration: underline;
-    font-size: 0.8rem;
+    font-size: 0.8em;
 }
 
 .contact i {
@@ -301,7 +368,7 @@ footer {
 }
 
 footer p {
-    font-size: 0.9rem;
+    font-size: 0.9em;
     font-weight: 100;
     padding: 0 1rem;
 }
