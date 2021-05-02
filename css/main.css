@@ -250,6 +250,7 @@ select {
 
 .post__item {
     padding: 0 4rem 0;
+    border: none;
 }
 
 .post__item:nth-child(2) {
