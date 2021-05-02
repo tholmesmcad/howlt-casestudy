@@ -1,3 +1,4 @@
+/*Content from https://howlt.com/en/ for learning purposes*/
 *,
 *:before,
 *:after {
@@ -25,18 +26,35 @@ img {
 }
 
 /*TYPOGRAPHY*/
-/*Typography - desktop*/
-@media screen and (min-width: 601px) {
-p {
-    font-size: 24px;
+p,
+h1,
+li {
+    font-family: var(--font-sans-serif);
+    font-size: 22px;
+    line-height: 1.5em;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.small li {
+    font-size: 1.1rem;
 }
 
 h2 {
+    font-family: var(--font-serif);
+    font-size: 1.1em;
     font-size: 4em;
+    font-weight: 400;
+    margin: 0;
 }
 
+/*I created a lot of heading size workarounds due to a large number of font sizes used on the site*/
 h2.small {
-    font-size: 1.3em;
+    font-size: 1.2em;
+    text-transform: none; 
+    text-align: center;
+    margin: 0 0 1em;
 }
 
 h2.extrasmall {
@@ -44,7 +62,10 @@ h2.extrasmall {
 }
 
 h3 {
+    font-family: var(--font-sans-serif);
     font-size: 1.1em;
+    font-weight: 200;
+    text-transform: uppercase;
 }
 
 h3.small {
@@ -52,85 +73,50 @@ h3.small {
 }
 
 h4 {
+    font-family: var(--font-sans-serif);
     font-size: 0.8em;
+    font-weight: 200;
 }
 
 h4.large {
     font-size: 1em;
+    margin: 1em 0 0;
 }
 
 em {
+    font-family: var(--font-italics);
     font-size: 0.6em;
-}
-
-select {
-    font-size: 0.9em;
-}
-
-.small li {
-    font-size: 1.1rem;
 }
 
 .contact li {
     font-size: 1.5rem;
 }
 
-.contact .small li {
-    font-size: 0.9rem;
-}
+.uppercase {
+    text-transform: uppercase;
 }
 
 /*Typography - mobile*/
 @media screen and (max-width: 600px) {
-p {
-    font-size: 16px;
-}
-}
+    p,
+    .contact li {
+        font-size: 16px;
+    }
 
-/*Typography - all*/
-p,
-h1,
-li {
-    font-family: var(--font-sans-serif);
-    line-height: 1.5em;
-    list-style: none;
-    margin: 0;
-    padding: 0;
-}
+    h2 {
+        font-size: 2em;
+    }
 
-h2 {
-    font-family: var(--font-serif);
-    font-weight: 400;
-    text-transform: uppercase;
-    margin: 0;
-}
+    h3 {
+        font-size: 0.8em;
+    }
 
-h2.small {
-    text-transform: none; 
-    text-align: center;
-    margin: 0 0 1em;
-}
+    h4.large {
+        font-size: 0.8em;
+    }
+    }
 
-h3 {
-    font-family: var(--font-sans-serif);
-    font-weight: 200;
-    text-transform: uppercase;
-}
-
-h4 {
-    font-family: var(--font-sans-serif);
-    font-weight: 200;
-}
-
-h4.large {
-    margin: 1em 0 0;
-}
-
-em {
-    font-family: var(--font-italics);
-}
-
-/*nav*/
+/*NAVIGATION*/
 .nav-main {
     display: flex;
     align-items: center;
@@ -138,9 +124,8 @@ em {
     position: fixed;
     top: 0;
     width: 100%;
-    margin: auto;
-    padding: 2rem 0 0.5rem;
     background: white;
+    padding-top: 1rem;
 }
 
 a {
@@ -149,6 +134,7 @@ a {
 }
 
 select {
+    font-size: 0.9em;
     border: none;
 }
 
@@ -167,15 +153,13 @@ select {
 /*Nav - Pages*/
 .nav-page .nav-list {
     display: grid;
-    align-items: center;
-    grid-template-columns: repeat(6, minmax(auto, 75px));
-    grid-gap: 1rem;
-    padding: 0 2rem 0 2rem;
+    grid-template-columns: repeat(6, auto);
+    grid-gap: 2.5vw;
+    padding: 0 3.5rem;
 }
 
 .nav-page .nav-list li { 
     font-size: 1rem;
-    text-align: right;
 }
 
 /*Nav - Icons*/
@@ -190,11 +174,11 @@ select {
 
 .nav-icon .nav-list li {
     margin: 0 0.3rem;
-    padding: 0.3rem;
+    padding: 0 0.3rem;
     font-size: 1.3rem;
 }
 
-/*Cover section*/
+/*COVER SECTION*/
 .cover-section {
     margin: 0;
     padding: 0;
@@ -214,56 +198,68 @@ select {
     margin-top: 10rem;
 }
 
-/*Recent Posts*/
+/*RECENT POSTS*/
 .gallery h2{
     text-align: center;
-    margin: 1rem;
+    margin: 8rem 0 1rem;
     margin-bottom: 3.5rem;
 }
 
 .gallery {
-    margin-top: 8rem;
-    padding: 4rem;
+    margin: 0 auto;
 }
 
-.gallery__item img {
-    max-width: 340px;
-    height: 450px;
+.gallery p {
+    width: 100%;
 }
-  
+
 .gallery .container {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
-	grid-template-rows: repeat(auto-fit, minmax(340px, 1fr));
+    justify-items: center;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    margin: 0 1rem;
+    grid-gap: 0.5rem;
 }
 
 .gallery__item {
+    max-width: 100%;
     padding-bottom: 2rem;
 }
 
-/*Howlt Coffee*/
+.gallery__item img {
+    height: 24vw;
+    min-height: 160px;
+    width: 18vw;
+    min-width: 120px;
+}
+
+/*HOWLT COFFEE*/
+.post {
+    margin-top: 4rem;
+}
+
+.post__item h2 img {
+    width: 20vw;
+    min-width: 200px;
+}
+
 .post .container {
     display: grid;
-    grid-template-columns: repeat(2, minmax(auto, 50%));
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
 }
 
 .post__item {
-    padding: 0 8rem 0 4rem;
+    padding: 0 4rem 0;
+    border: 1px solid blue;
 }
 
-.post__item img {
-    max-width: 400px;
-}
-
-.post__image img {
+.post__item:nth-child(2) {
     padding: 0;
-    max-height: 50rem;
-    width: 100%;
-    object-fit: cover;
+    max-width: 100%;
 }
 
 .post h2 {
-    margin: 5rem 0 10rem;
+    margin: 5rem 0;
 }
 
 .post__item--paragraph {
@@ -274,19 +270,20 @@ select {
     font-size: 1rem;
 }
 
-/*Instagram*/
+/*INSTAGRAM*/
 h3.instagram  {
     text-align: center;
     text-transform: none;
-    margin-bottom: 4rem;
+    margin: 12rem 0 4rem;
     position: relative;
+    font-size: 0.9rem;
 }
 
 .large-icon {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
 }
 
-/*Newsletter*/
+/*NEWSLETTER*/
 .newsletter {
     margin: 12rem 0 8rem;
     text-align: center;
@@ -305,16 +302,17 @@ input[type=submit] {
     text-transform: uppercase;
     color: white;
     border: none;
+    margin-top: 1rem;
     padding: 0.8rem 3rem;
     position: relative;
     bottom: 10.5px;
 }
 
-/*Contact*/
+/*CONTACT*/
 .contact {
-    margin: 4rem 5rem;
-    padding: 1rem 0;
-    border-top: 1px solid #ccc;
+    width: 80%;
+    margin: 4rem auto; 
+    border-top: 0.7px solid #d9d9d9;
 }
 
 .contact img {
@@ -332,20 +330,16 @@ input[type=submit] {
     flex-basis: 20rem;
 }
 
-ul {
+.contact ul, p {
     padding: 0;
     margin: 0;
+    min-width: 250px;
 }
 
 h2.extrasmall {
     font-weight: 100;
     text-transform: none;
     margin: 2rem 0 .2rem;
-}
-
-.contact p{
-    margin: 0;
-    padding: 0;
 }
 
 p.map {
@@ -357,7 +351,11 @@ p.map {
     margin: 0 0.8rem;
 }
 
-/*Footer*/
+.contact .small li {
+    font-size: 0.9rem;
+}
+
+/*FOOTER*/
 footer {
     margin-top: 10rem;
     padding: 1rem 0;
@@ -365,17 +363,17 @@ footer {
     color: white;
     display: flex;
     justify-content: space-between;
+    flex-shrink: 0;
 }
 
 footer p {
-    font-size: 0.9em;
+    font-size: 1em;
     font-weight: 100;
-    padding: 0 1rem;
+    padding: 0;
+    margin: 0;
 }
 
-footer .itm1 {
-    padding-left: 5rem;
+footer p:first-child {
+    padding-left: 4vw;
 }
-
-
 
